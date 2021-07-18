@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<body style="background-color: lightyellow;"></body>
+<div class="product-area section">
+            <div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title">
+							<h2>In order for you!
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			 
+							
+		<div class="tab-content" id="myTabContent">
+			<!-- Start Single Tab -->
+			<div class="tab-pane fade show active" id="man" role="tabpanel">
+				<div class="tab-single">
+					<div class="row">
+						<!--{% for mesg in get_flashed_messages() %}
+					      <h1>{{ mesg }}</h1>
+					    {% endfor %}-->
+
+						{% for i in range (0,length) %}
+
+									<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+										<div class="single-product">
+											<div class="product-img" style="padding:5%; margin:5%">
+												<a href="product-details.html">
+													<img class="default-img" src="static/images/{{ dat[i]['image'] }}" alt="#">
+													<img class="hover-img" src="static/images/{{ dat[i]['image'] }}" alt="#">
+												</a>
+												<div class="button-head">
+
+													<form action="{{ url_for('wishlist') }}" method="post">
+														<div class="product-action">
+															<input type="hidden" name="calling" value="/blousedisp"/>
+															<input type="hidden" name="wishlist" value="{{ dat[i]['product_id'] }}"/>
+															<button id="wishbtn" class="btn btn--radius-2 btn--blue" type="submit">Add to Wishlist</button>
+														</div>
+													</form>
+
+													
+
+
+													<form action="{{ url_for('cart') }}" method="post">
+														<div class="product-action-2">
+															<input type="hidden" name="calling" value="/blousedisp"/>
+															<input type="hidden" name="cart" value="{{ dat[i]['product_id'] }}"/>
+															<button id="cartbtn" class="btn btn--radius-2 btn--blue" type="submit" >Add to Cart</button>
+														</div>
+													</form>
+
+												</div>
+											</div>
+								
+											<div class="product-content" style="padding:5%; margin:5%; line-height:1.6">
+												<h3 style="line-height: 1.2">NAME :{{ dat[i]['name'] }}</h3>
+												<div class="product-price">
+													<span>COST :{{ dat[i]['sell_price'] }}</span><br>
+													<span>DESCRIPTION :{{ dat[i]['description'] }}</span><br>
+													<span>SHIPPING :{{ dat[i]['shipping'] }}</span><br>
+												</div>
+											</div>
+										</div>
+										<form action="{{ url_for('markbask') }}" method="post">
+											<div class="product-action" style="padding:5%; margin:5%">
+												<input type="hidden" name="calling" value="/blousedisp"/>
+												<input type="hidden" name="markbask" value="{{dat[i]['product_id'] }}"/>
+												<button id="wishbtn" class="btn btn--radius-2 btn--blue" type="submit">View details</button>
+											</div>
+										</form>
+									</div>
+
+							
+							{% endfor %}
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+
+
+
+
+<section class="shop-services section home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-rocket"></i>
+						<h4>Free shiping</h4>
+						<p>Orders over Rs.1000</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-reload"></i>
+						<h4>Free Return</h4>
+						<p>Within 30 days returns</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-lock"></i>
+						<h4>Sucure Payment</h4>
+						<p>100% secure payment</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-tag"></i>
+						<h4>Best Piece</h4>
+						<p>Guaranteed price</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+{% endblock %}
+

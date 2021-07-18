@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+	{% block body %}
+	
+		<div class="product-area section">
+            <div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title">
+							<h2>Your Cart</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			 
+							
+		<div class="tab-content" id="myTabContent">
+			<!-- Start Single Tab -->
+			<div class="tab-pane fade show active" id="man" role="tabpanel">
+				<div class="tab-single">
+					<div class="row">
+						<!--{% for mesg in get_flashed_messages() %}
+					      <h1>{{ mesg }}</h1>
+					    {% endfor %}-->
+
+						{% for data in dat %}
+
+								<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+									<div class="single-product">
+										<div class="product-img">
+											<a href="#">
+												<img class="default-img" src="static/images/{{ data['image'] }}" alt="#">
+												<img class="hover-img" src="static/images/{{ data['image'] }}" alt="#">
+											</a>
+											<!--<div class="button-head">
+
+												<form action="{{ url_for('wishlist') }}" method="post">
+													<div class="product-action">
+														<input type="hidden" name="calling" value="/kurtidisp"/>
+														<input type="hidden" name="wishlist" value="{{ data['product_id'] }}"/>
+														<button id="wishbtn" class="btn btn--radius-2 btn--blue" type="submit">Add to Wishlist</button>
+													</div>
+												</form>
+
+
+												<form action="{{ url_for('cart') }}" method="post">
+													<div class="product-action-2">
+														<input type="hidden" name="calling" value="/kurtidisp"/>
+														<input type="hidden" name="cart" value="{{ data['product_id'] }}"/>
+														<button id="cartbtn" class="btn btn--radius-2 btn--blue" type="submit" >Add to Cart</button>
+													</div>
+												</form>
+
+											</div>-->
+										</div>
+							
+										<div class="product-content">
+											<h4>{{ data['name'] }}</h4>
+											<h5>{{ data['description'] }}</h5>
+											<h6>{{ data['size'] }}</h6>
+											<div class="product-price">
+												<span>{{ data['cost_price'] }}</span>
+											</div>
+										</div>
+									</div>
+								</div>
+						
+						{% endfor %}
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_Gwjg34jVqDgcjv/view" data-text="Checkout" data-color="#FFDB29" data-size="large">
+		  <script>
+		    (function(){
+		      var d=document; 
+		      var x=!d.getElementById('razorpay-embed-btn-js');
+		      if(x)
+		 var s=d.createElement('script'); 
+			      s.defer=!0;
+			      s.id='razorpay-embed-btn-js';
+			      s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';
+			      d.body.appendChild(s);
+			  } 
+			  else{var rzp=window['__rzp__'];
+			      rzp && rzp.init && rzp.init()}})
+		  </script>
+		</div>
+		<!--<div class="single-widget get-button">
+		<form class="form" method="POST" action="{{ url_for('payment') }}">
+			
+			<div class="content" >
+				<div class="button" style="padding:10px" >
+					<button class="btn btn--radius-2 btn--blue" type="submit">Checkout</button>
+				</div>
+			</div>
+			
+		</form>
+		</div>-->
+	</div>
+			
+	<!-- Start Shop Services Area  -->
+	<section class="shop-services section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-rocket"></i>
+						<h4>Free shiping</h4>
+						<p>Orders over $100</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-reload"></i>
+						<h4>Free Return</h4>
+						<p>Within 30 days returns</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-lock"></i>
+						<h4>Sucure Payment</h4>
+						<p>100% secure payment</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-tag"></i>
+						<h4>Best Peice</h4>
+						<p>Guaranteed price</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Shop Newsletter -->
+	
+	
+	
+{% endblock %}

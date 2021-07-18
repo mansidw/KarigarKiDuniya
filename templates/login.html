@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='copyright' content=''>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title Tag  -->
+    <title>KarigarKiDuniya</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/wlogo.jpeg')}}">
+	<!-- Web Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+	
+	<!-- StyleSheet -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+	
+	<!-- Magnific Popup -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.min.css')}}">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css')}}">
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css')}}">
+	<!-- Themify Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themify-icons.css')}}">
+	<!-- Nice Select CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/niceselect.css')}}">
+	<!-- Animate CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css')}}">
+	<!-- Flex Slider CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flex-slider.min.css')}}">
+	<!-- Owl Carousel -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl-carousel.css')}}">
+	<!-- Slicknav -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css')}}">
+	
+	<!-- Eshop StyleSheet -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+    
+	
+</head>
+
+<body class="js">
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- End Preloader -->
+		<header class="header shop">
+			<!-- Topbar -->
+			<div class="topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-12 col-12">
+							<!-- Top Left -->
+							<div class="top-left">
+								<ul class="list-main">
+									<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
+									<li><i class="ti-email"></i> support@KarigarKiDuniya.com</li>
+								</ul>
+							</div>
+							<!--/ End Top Left -->
+						</div>
+						<div class="col-lg-7 col-md-12 col-12">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Topbar -->
+			<div class="middle-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2 col-md-2 col-12">
+							
+							<div class="logo">
+								<img src="{{ url_for('static', filename='images/wlogo.jpeg')}}" alt="logo">
+							</div>
+							
+									
+									
+									
+								</div>
+								
+							</div>
+				<div id="google_translate_element"></div> 
+      
+									<script type="text/javascript"> 
+										function googleTranslateElementInit() { 
+											new google.translate.TranslateElement(
+												{pageLanguage: 'en'}, 
+												'google_translate_element'
+											); 
+										} 
+									</script> 
+									  
+									<script type="text/javascript" src=
+								"https://translate.google.com/translate_a/element.js?
+										cb=googleTranslateElementInit">
+									</script> 	
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+	
+	<div class="shopping-cart section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<!-- Shopping Summery -->
+					<table class="table shopping-summery">
+						<thead>
+							<tr class="main-hading">
+								
+								
+								
+								<th class="text-center">LOGIN</th>
+								
+								
+							</tr>
+						</thead>
+					</table>
+					<!--/ End Shopping Summery -->
+				</div>
+			</div>
+			<section class="shop checkout section">
+				<div class="container">
+					<div class="row"> 
+						<div class="col-lg-8 col-12">
+							<div class="checkout-form">
+								
+								<!-- Form -->
+								<form class="form" method="POST" action="{{ url_for('login') }}">
+									<div class="row">
+										<div class="col-lg-12 col-md-12 col-12">
+											<div class="form-group">
+												<label>Username<span>*</span></label>
+												<input type="text" name="username" placeholder="" required="required">
+											</div>
+										</div>
+										<div class="col-lg-12 col-md-12 col-12">
+											<div class="form-group">
+												<label>Password<span>*</span></label>
+												<input type="password" name="password" placeholder="" required="required">
+											</div>
+										</div>
+										<br>
+										<div class="col-lg-12 col-md-12 col-12">
+											<label for="cars">Who am I ?</label>
+											<select name="typo" id="cars" required>
+											 	<option value="seller">Seller</option>
+											    <option value="customer">Customer</option>
+											</select>
+										</div>
+											  <br><br>
+										
+										<div class="col-12">
+											<div class="form-group create-account">
+												<input id="cbox" type="checkbox">
+												<label>I agree all conditions in <a href="#">Terms of service</a></label>
+											</div>
+										</div>
+										<div class="single-widget get-button">
+											<div class="content" >
+												<div class="button" style="padding:10px" >
+													<button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<!--/ End Form -->
+							</div>
+						</div>
+					</div>
+					</section>
+					<section class="shop-newsletter section">
+			<div class="container">
+				<div class="inner-top">
+					<div class="row">
+						<div class="col-lg-8 offset-lg-2 col-12">
+							<!-- Start Newsletter Inner -->
+							<div class="inner">
+								<p style="font-size: 20px;">Or:<a  href="{{url_for('loginwithotp')}}"> Login with OTP</a></p>
+							</div>
+							<div class="inner">
+								<p style="font-size: 20px;">Wanna Register!  <a  href="{{url_for('register')}}"> Sign Up here</a></p>
+							</div>
+							<!-- End Newsletter Inner -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+<footer class="footer">
+		<!-- Footer Top -->
+		<div class="footer-top section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer about">
+							<div class="logo">
+								<a href="index.html"><img src="{{ url_for('static',filename='images/wlogo2.jpeg')}}" alt="#"></a>
+							</div>
+							<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
+							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Information</h4>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Faq</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Help</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-2 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer links">
+							<h4>Customer Service</h4>
+							<ul>
+								<li><a href="#">Payment Methods</a></li>
+								<li><a href="#">Money-back</a></li>
+								<li><a href="#">Returns</a></li>
+								<li><a href="#">Shipping</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Widget -->
+						<div class="single-footer social">
+							<h4>Get In Tuch</h4>
+							<!-- Single Widget -->
+							<div class="contact">
+								<ul>
+									<li>NO. 342 - London Oxford Street.</li>
+									<li>012 United Kingdom.</li>
+									<li>info@eshop.com</li>
+									<li>+032 3456 7890</li>
+								</ul>
+							</div>
+							<!-- End Single Widget -->
+							<ul>
+								<li><a href="#"><i class="ti-facebook"></i></a></li>
+								<li><a href="#"><i class="ti-twitter"></i></a></li>
+								<li><a href="#"><i class="ti-flickr"></i></a></li>
+								<li><a href="#"><i class="ti-instagram"></i></a></li>
+							</ul>
+						</div>
+						<!-- End Single Widget -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Top -->
+		<div class="copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="left">
+								<p>Copyright © 2020 <a href="#" target="_blank">K</a>KarigarKiDuniya  -  All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-lg-6 col-12">
+							<div class="right">
+								<img src="{{ url_for('static',filename='images/payments.png')}}" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /End Footer Area -->
+ 
+	<!-- Jquery -->
+    <script src="{{ url_for('static',filename='js/jquery.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-migrate-3.0.0.js')}}"></script>
+	<script src="{{ url_for('static',filename='js/jquery-ui.min.js')}}"></script>
+	<!-- Popper JS -->
+	<script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>
+	<!-- Bootstrap JS -->
+	<script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<!-- Color JS -->
+	<script src="{{ url_for('static',filename='js/colors.js')}}"></script>
+	<!-- Slicknav JS -->
+	<script src="{{ url_for('static',filename='js/slicknav.min.js')}}"></script>
+	<!-- Owl Carousel JS -->
+	<script src="{{ url_for('static',filename='js/owl-carousel.js')}}"></script>
+	<!-- Magnific Popup JS -->
+	<script src="{{ url_for('static',filename='js/magnific-popup.js')}}"></script>
+	<!-- Waypoints JS -->
+	<script src="{{ url_for('static',filename='js/waypoints.min.js')}}"></script>
+	<!-- Countdown JS -->
+	<script src="{{ url_for('static',filename='js/finalcountdown.min.js')}}"></script>
+	<!-- Nice Select JS -->
+	<script src="{{ url_for('static',filename='js/nicesellect.js')}}"></script>
+	<!-- Flex Slider JS -->
+	<script src="{{ url_for('static',filename='js/flex-slider.js')}}"></script>
+	<!-- ScrollUp JS -->
+	<script src="{{ url_for('static',filename='js/scrollup.js')}}"></script>
+	<!-- Onepage Nav JS -->
+	<script src="{{ url_for('static',filename='js/onepage-nav.min.js')}}"></script>
+	<!-- Easing JS -->
+	<script src="{{ url_for('static',filename='js/easing.js')}}"></script>
+	<!-- Active JS -->
+	<script src="{{ url_for('static',filename='js/active.js')}}"></script>
+</body>
+</html>

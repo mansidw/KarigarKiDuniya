@@ -1,0 +1,282 @@
+
+<!-- keyword_search-->
+
+
+<header class="header shop">
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-12 col-12">
+						<!-- Top Left -->
+						<div class="top-left">
+							<ul class="list-main">
+								<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
+								<li><i class="ti-email"></i> support@KarigarKiDuniya.com</li>
+							</ul>
+						</div>
+						<!--/ End Top Left -->
+					</div>
+					<div class="col-lg-7 col-md-12 col-12">
+						<!-- Top Right -->
+						<div class="right-content">
+							<ul class="list-main">
+								
+								<!--<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
+								<li><i class="ti-user"></i> <a href="#">My account</a></li>-->
+								<li><i class="ti-home"></i><a href="{{ url_for('custdash') }}">Home</a></li>
+								<li><i class="ti-power-off"></i><a href="{{ url_for('logout') }}">Logout</a></li>
+							</ul>
+						</div>
+						<!-- End Top Right -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Topbar -->
+		<div class="middle-inner">
+			<div class="container">
+				<div class="row">
+					
+					
+					<div class="col-lg-2 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="/checkwish" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							</div>
+
+							<!--<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+							</div>-->
+
+							<div class="sinlge-bar">
+								<a href="/checkcart" class="single-icon"><i class="ti-bag" aria-hidden="true"></i></a>
+							</div>
+
+
+
+							<div id="google_translate_element"></div> 
+      
+									<script type="text/javascript"> 
+										function googleTranslateElementInit() { 
+											new google.translate.TranslateElement(
+												{pageLanguage: 'en'}, 
+												'google_translate_element'
+											); 
+										} 
+									</script> 
+									  
+									<script type="text/javascript" src=
+								"https://translate.google.com/translate_a/element.js?
+										cb=googleTranslateElementInit">
+									</script> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						
+						<div class="col-lg-9 col-12">
+							<div class="menu-area">
+								<!-- Main Menu -->
+								<nav class="navbar navbar-expand-lg">
+									<div class="navbar-collapse">	
+										<div class="nav-inner">	
+											<ul class="nav main-menu menu navbar-nav">
+												<!--<h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="false"></i>CATEGORIES</h3>
+													<ul class="main-category">
+														
+														<li><a href="#">View All</a></li>
+														<li><a href="#">Kurtas</a></li>
+														<li><a href="#">Saree</a></li>
+														<li><a href="#">Blouse</a></li>
+														<li><a href="#">Shawls</a></li>
+														<li><a href="#">Palazzos</a></li>
+														
+													</ul>-->
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 0px;padding-right: 40px;"><a href="#">Categories<i class="ti-angle-down"></i></a>
+														<ul class="dropdown">
+															
+															<li><a href="{{ url_for('kurtidisp') }}">Kurtas</a></li>
+															<li><a href="{{ url_for('sareedisp') }}">Saree</a></li>
+															<li><a href="{{ url_for('blousedisp') }}">Blouse</a></li>
+															<li><a href="{{ url_for('shawldisp') }}">Shawls</a></li>
+															<li><a href="{{ url_for('plazzodisp') }}">Palazzos</a></li>
+														</ul>
+													</li>
+
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;padding-right: 25px;"><a href="/custdash">Home</a></li>
+																								
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;padding-right: 25px;"><a href="#">Shop<i class="ti-angle-down"></i></a>
+														<ul class="dropdown">
+															<li><a href="/checkcart">Cart</a></li>
+															<li><a href="/checkwish">Wishlist</a></li>
+														</ul>
+													</li>
+													
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;padding-right: 25px;"><a href="{{ url_for('contact') }}">Contact Us</a></li>
+												</ul>
+										</div>
+									</div>
+								</nav>
+								<!--/ End Main Menu -->	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!--/ End Header -->
+
+
+<!-- keyword_search-->
+
+
+
+
+<!-- blousedisp-->
+
+
+	<header class="header shop">
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-12 col-12">
+						<!-- Top Left -->
+						<div class="top-left">
+							<ul class="list-main">
+								<li><i class="ti-headphone-alt"></i> +060 (800) 801-582</li>
+								<li><i class="ti-email"></i> support@KarigarKiDuniya.com</li>
+							</ul>
+						</div>
+						<!--/ End Top Left -->
+					</div>
+					<div class="col-lg-7 col-md-12 col-12">
+						<!-- Top Right -->
+						<div class="right-content">
+							<ul class="list-main">
+								
+								<!--<li><i class="ti-alarm-clock"></i> <a href="#">Daily deal</a></li>
+								<li><i class="ti-user"></i> <a href="#">My account</a></li>-->
+								<li><i class="ti-home"></i><a href="{{ url_for('custdash') }}">Home</a></li>
+								<li><i class="ti-power-off"></i><a href="{{ url_for('logout') }}">Logout</a></li>
+							</ul>
+						</div>
+						<!-- End Top Right -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Topbar -->
+		<div class="middle-inner">
+			<div class="container">
+				<div class="row">
+					
+					
+					<div class="col-lg-2 col-md-3 col-12">
+						<div class="right-bar">
+							<!-- Search Form -->
+							<div class="sinlge-bar">
+								<a href="/checkwish" class="single-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							</div>
+
+							<!--<div class="sinlge-bar">
+								<a href="#" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+							</div>-->
+
+							<div class="sinlge-bar">
+								<a href="/checkcart" class="single-icon"><i class="ti-bag" aria-hidden="true"></i></a>
+							</div>
+
+
+
+							<div id="google_translate_element"></div> 
+      
+									<script type="text/javascript"> 
+										function googleTranslateElementInit() { 
+											new google.translate.TranslateElement(
+												{pageLanguage: 'en'}, 
+												'google_translate_element'
+											); 
+										} 
+									</script> 
+									  
+									<script type="text/javascript" src=
+								"https://translate.google.com/translate_a/element.js?
+										cb=googleTranslateElementInit">
+									</script> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="cat-nav-head">
+					<div class="row">
+						
+						<div class="col-lg-9 col-12">
+							<div class="menu-area">
+								<!-- Main Menu -->
+								<nav class="navbar navbar-expand-lg">
+									<div class="navbar-collapse">	
+										<div class="nav-inner">	
+											<ul class="nav main-menu menu navbar-nav">
+												<!--<h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="false"></i>CATEGORIES</h3>
+													<ul class="main-category">
+														
+														<li><a href="#">View All</a></li>
+														<li><a href="#">Kurtas</a></li>
+														<li><a href="#">Saree</a></li>
+														<li><a href="#">Blouse</a></li>
+														<li><a href="#">Shawls</a></li>
+														<li><a href="#">Palazzos</a></li>
+														
+													</ul>-->
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 0px;padding-right: 40px;"><a href="#">Categories<i class="ti-angle-down"></i></a>
+														<ul class="dropdown">
+															
+															<li><a href="{{ url_for('kurtidisp') }}">Kurtas</a></li>
+															<li><a href="{{ url_for('sareedisp') }}">Saree</a></li>
+															<li><a href="{{ url_for('blousedisp') }}">Blouse</a></li>
+															<li><a href="{{ url_for('shawldisp') }}">Shawls</a></li>
+															<li><a href="{{ url_for('plazzodisp') }}">Palazzos</a></li>
+														</ul>
+													</li>
+
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;padding-right: 25px;"><a href="/custdash">Home</a></li>
+																								
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;padding-right: 25px;"><a href="#">Shop<i class="ti-angle-down"></i></a>
+														<ul class="dropdown">
+															<li><a href="/checkcart">Cart</a></li>
+															<li><a href="/checkwish">Wishlist</a></li>
+														</ul>
+													</li>
+													
+													<li style="padding-top: 10px; padding-bottom: 10px; padding-left: 25px;padding-right: 25px;"><a href="{{ url_for('contact') }}">Contact Us</a></li>
+												</ul>
+										</div>
+									</div>
+								</nav>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</header>
+
+
+<!-- blousedisp-->

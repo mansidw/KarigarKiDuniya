@@ -1,0 +1,332 @@
+{% extends "layout.html" %}
+{% block body %}
+	
+	<body style="background-color: lightyellow;"></body>
+	<!-- Header -->
+	
+	<!--/ End Header -->
+	
+	<!-- Slider Area -->
+	<section class="hero-slider">
+		
+		<!-- Single Slider -->
+		<div class="single-slider" style="background-image: url('{{ url_for('static', filename='images/kurtidash.jpg')}}')" >
+		
+			
+			<div class="container">
+				<div class="row no-gutters">
+					
+					<div class="col-lg-9 offset-lg-3 col-12" >
+						<div class="text-inner" >
+							<div class="row" >
+								<div class="col-lg-7 col-12" >
+									
+									<div class="hero-text">
+										<div style="width:450px;
+										box-shadow: 0 0 3px 0 rgba(255, 0, 0, 0.8);
+										background:#fff;
+										padding:20px;
+										margin:15% auto 0;
+										text-align:center;
+										border-radius: 30px; 
+										opacity:0.9;">
+										<h1><span>UP TO 20% OFF </span>Kurtis for Women</h1>
+										<p>Shop for a wide range of colorful kurtis <br> perfect for any occasion <br> at the best prices.</p>
+										<div class="button">
+											<a href="{{ url_for('kurtidisp') }}" class="btn">Shop Now!</a>
+										</div>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Single Slider -->
+	</section>
+	<!--/ End Slider Area -->
+	
+	<!-- Start Small Banner  -->
+	<section class="small-banner section">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- Single Banner  -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-banner">
+						<img style="opacity:0.7" src="http://assets.myntassets.com/v1/assets/images/6014134/2018/6/5/8fe63b6a-e9ce-4d08-a699-badc2471e2df1528190573395-Fabindia-Women-Kurtis-4201528190573196-1.jpg | http://assets.myntassets.com/v1/assets/images/6014134/2018/6/5/a948517f-238a-41ce-9350-653b93ace7a61528190573371-Fabindia-Women-Kurtis-4201528190573196-2.jpg | http://assets.myntassets.com/v1/assets/images/6014134/2018/6/5/4bc7e9ce-356d-4449-8d77-accc2a38f1a61528190573346-Fabindia-Women-Kurtis-4201528190573196-3.jpg | http://assets.myntassets.com/v1/assets/images/6014134/2018/6/5/41379c62-4a5c-4707-bded-bcb8b76070f11528190573331-Fabindia-Women-Kurtis-4201528190573196-4.jpg" alt="#">
+						<div class="content">
+							<p><b>Woman's Collectons</b></p>
+							<h3>Kurtis in <br> Women</h3>
+							<a href="{{ url_for('kurtidisp') }}">Shop Now</a>
+						</div>
+					</div>
+				</div>
+				<!-- /End Single Banner  -->
+				<!-- Single Banner  -->
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-banner">
+						<img style="opacity:0.7" src="http://assets.myntassets.com/v1/assets/images/8230697/2019/1/8/f534efc5-e007-4a78-a9a8-db5aa8c226221546951529684-Inddus-Peach-Coloured--Purple-Linen-Blend-Printed-Saree-3061-1.jpg" alt="#">
+						<div class="content">
+							<p><b>Saree Collectons</b></p>
+							<h3>Awesome Sarees <br> 2021</h3>
+							<a href="{{ url_for('sareedisp') }}">Shop Now</a>
+						</div>
+					</div>
+				</div>
+				<!-- /End Single Banner  -->
+				<!-- Single Banner  -->
+				<div class="col-lg-4 col-12">
+					<div class="single-banner tab-height">
+						<img style="opacity:0.7" src="http://assets.myntassets.com/v1/assets/images/7871303/2018/11/24/d38b499c-5bb7-476f-86a4-bb97523cbaf91543048373585-Ishin-Acrylic--Synthetic-White-Solid--Womens-Shawls-Summer--Winters-6341543048373459-1.jpg | http://assets.myntassets.com/v1/assets/images/7871303/2018/11/24/5ce335f4-ee2e-4301-82e2-5a8c5ed77c471543048373553-Ishin-Acrylic--Synthetic-White-Solid--Womens-Shawls-Summer--Winters-6341543048373459-2.jpg | http://assets.myntassets.com/v1/assets/images/7871303/2018/11/24/123acd86-8e20-441d-8a2a-edb69d5d44a11543048373524-Ishin-Acrylic--Synthetic-White-Solid--Womens-Shawls-Summer--Winters-6341543048373459-3.jpg" alt="#">
+						<div class="content">
+							<p><b>Shawl Collection</b></p>
+							<h3>Season <br> Up to <span>Favourites</span> Off</h3>
+							<a href="{{ url_for('shawldisp') }}">Shop Now</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	 
+	
+	<!-- Start Product Area -->
+    <div class="product-area section">
+            <div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="section-title">
+									<h2>Trending Items</h2>
+								</div>
+							</div>
+						</div>
+							</div>
+							
+							<div class="tab-content" id="myTabContent">
+								<!-- Start Single Tab -->
+								<div class="tab-pane fade show active" id="man" role="tabpanel">
+									<div class="tab-single">
+										<div class="row">
+
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/9489149/2019/5/3/335ae210-0405-46c1-9662-9bcfd0fd64a61556887902299-Shakumbhari-Women-Grey-Woven-Design-A-Line-Kurta-87115568879-1.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/9489149/2019/5/3/335ae210-0405-46c1-9662-9bcfd0fd64a61556887902299-Shakumbhari-Women-Grey-Woven-Design-A-Line-Kurta-87115568879-1.jpg" alt="#">
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html">Grey Woven Design A-Line Kurta</a></h3>
+														<div class="product-price">
+															<span>Rs.942.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/1399883/2019/7/12/fc530c0c-c3df-4c01-80c3-3984de8e081b1562911615861-BIBA-Blue-Embroidered-Winter-Kurta-8921562911614345-1.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/1399883/2019/7/12/fc530c0c-c3df-4c01-80c3-3984de8e081b1562911615861-BIBA-Blue-Embroidered-Winter-Kurta-8921562911614345-1.jpg" alt="#">
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html">Blue Embroidered Winter Kurta</a></h3>
+														<div class="product-price">
+															<span>Rs.2399.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/2276344/2018/1/24/11516787284290-Ira-Soleil-Navy-Blue--Red-Woven-Design-Ready-to-Wear-Lehenga--Blouse-with-Dupatta-2031516787284117-1.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/2276344/2018/1/24/11516787284290-Ira-Soleil-Navy-Blue--Red-Woven-Design-Ready-to-Wear-Lehenga--Blouse-with-Dupatta-2031516787284117-1.jpg" alt="#">
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html"> Navy Blue & Red Woven Design Ready to Wear Lehenga & Blouse</a></h3>
+														<div class="product-price">
+															<span>Rs.2850.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/productimage/2019/4/12/a099c076-7cf6-439b-9785-262cee7160c61555052895003-1.jpg " alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/productimage/2019/4/12/a099c076-7cf6-439b-9785-262cee7160c61555052895003-1.jpg " alt="#">
+															<span class="new">New</span>
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html"> Ready to Wear Lehenga & Blouse with Dupatta</a></h3>
+														<div class="product-price">
+															<span>Rs.799.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/productimage/2018/11/22/2650de4d-f719-462e-837b-32724f3f8da41542881079902-1.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/productimage/2018/11/22/2650de4d-f719-462e-837b-32724f3f8da41542881079902-1.jpg" alt="#">
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html">Women Green Printed Saree Blouse</a></h3>
+														<div class="product-price">
+															<span>Rs.509.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/9814511/2019/6/7/8f1f7992-e59e-4cfb-beb5-57ea00c2c6091559908440630-Inddus-Peach-Coloured--Charcoal-Poly-Georgette-Embroidered-S-1.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/9814511/2019/6/7/8f1f7992-e59e-4cfb-beb5-57ea00c2c6091559908440630-Inddus-Peach-Coloured--Charcoal-Poly-Georgette-Embroidered-S-1.jpg" alt="#">
+															<span class="price-dec">30% Off</span>
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html">Peach-Coloured & Black Poly Georgette Solid Saree With Embroidery Detail</a></h3>
+														<div class="product-price">
+															<span>Rs.1099.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/4449562/2018/4/13/11523599230133-Libas-Women-Palazzos-8711523599229956-1.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/4449562/2018/4/13/11523599230133-Libas-Women-Palazzos-8711523599229956-1.jpg" alt="#">
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html">Wide Leg Plazzo</a></h3>
+														<div class="product-price">
+															<span>Rs.758.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+
+											<div class="col-xl-3 col-lg-4 col-md-4 col-12">
+												<div class="single-product">
+													<div class="product-img">
+														<a href="product-details.html">
+															<img class="default-img" src="http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/34e6b95c-ff65-4701-b0f5-e8d5bc9bf1b41534840581199-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-1.jpg | http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/1c5154c0-b794-40aa-958b-79fb5db6f9b51534840581166-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-2.jpg | http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/60c30255-f749-473e-882d-523ec7d1e7e31534840581146-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-3.jpg | http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/24d45ac8-9f08-476f-9f0f-7ab2fa577ea61534840581122-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-4.jpg" alt="#">
+															<img class="hover-img" src="http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/34e6b95c-ff65-4701-b0f5-e8d5bc9bf1b41534840581199-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-1.jpg | http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/1c5154c0-b794-40aa-958b-79fb5db6f9b51534840581166-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-2.jpg | http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/60c30255-f749-473e-882d-523ec7d1e7e31534840581146-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-3.jpg | http://assets.myntassets.com/v1/assets/images/7201230/2018/8/21/24d45ac8-9f08-476f-9f0f-7ab2fa577ea61534840581122-Anekaant-Women-Blue--Pink-Woven-Design-Jacquard-Shawl-1641534840581059-4.jpg" alt="#">
+															<span class="out-of-stock">Hot</span>
+														</a>
+														
+													</div>
+													<div class="product-content">
+														<h3><a href="product-details.html">Women Blue & Pink Woven Design Jacquard Shawl</a></h3>
+														<div class="product-price">
+															<span class="old">Rs.999.00</span>
+															<span>Rs.899.00</span>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+								<!--/ End Single Tab -->
+								<!-- Start Single Tab -->
+
+								
+						
+					
+    <!-- Modal end -->
+	<section class="shop-services section home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-rocket"></i>
+						<h4>Free shiping</h4>
+						<p>Orders over Rs.1000</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-reload"></i>
+						<h4>Free Return</h4>
+						<p>Within 30 days returns</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-lock"></i>
+						<h4>Sucure Payment</h4>
+						<p>100% secure payment</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="ti-tag"></i>
+						<h4>Best Piece</h4>
+						<p>Guaranteed price</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	{% endblock %}
